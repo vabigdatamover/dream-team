@@ -1,0 +1,12 @@
+Overview of all ETL Programs our team created
+
+--Automated ETL program, set to ETL .csv files every minute one file at a time.
+schedule.ipynb
+
+--Manual ETL, all files are processed in bulk by the labeled file type, but files have to have the exact same columns.
+extract_transform_load_v3_csv.ipynb
+extract_transform_load_v3_xlsm.ipynb
+extract_transform_load_v3_xlsx.ipynb
+
+--ETL program does not load PDF's yet, will keep on working with it.
+extract_transform_load_v2_pdf.ipynb
