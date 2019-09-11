@@ -10,3 +10,6 @@ extract_transform_load_v3_xlsx.ipynb
 
 --ETL program does not load PDF's yet, will keep on working with it.
 extract_transform_load_v2_pdf.ipynb
+
+--Future Projects
+Schedule_Python.py and app.py are pet projects
