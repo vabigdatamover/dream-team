@@ -37,7 +37,7 @@ def insert(df):
     #db.etl_data.drop() # Drop collection if it already exist
 
     # Create a Mongo collection(table) called 'schedule_etl_data'
-    collection = db['schedule_etl_data']
+    collection = db['schedule_test_etl_data']
     
     
     with open('ETL_json_file') as f:
