@@ -15,84 +15,25 @@
 <body>
 	<div class="container-fluid">
 		<div class="jumbotron text-center">
-			<h1>Mission to Mars</h1>
-			<p><a class="btn btn-primary btn-lg" href="/scrape" role="button">ETL New Data</a></p>
+			<h1>HTML ETL Dashboard</h1>
+			<p><a class="btn btn-primary btn-lg" href="/schedule" role="button">Start ETL Process</a></p>
+			<p><a class="btn btn-primary btn-lg" href="/stop" role="button">Stop ETL Process</a></p>
 		</div>
-​
-​
-		<h3>Latest Mars News</h3>
-		<p><span style="font-weight:bold">{{ mars_dict.news_title }}</span></p>
-		<p>{{ mars_dict.news_p }}</p>
-​
-		<div class="row">
-			<div class="col-xs-8 col-md-8">
-				<h3>Featured Mars Image: {{ mars_dict.featured_img_title }}</h3>
-				<img src="{{ mars_dict.featured_image_url | default('static/images/error.png')}}" style="width:100%" class="img-responsive"
-					style="padding-right: 20px; padding left: 20px;" alt="featured_image"><br />
-				
-			</div>
-			<div class="col-xs-4 col-md-4">
-				<div class="col-xs-auto col-md-auto">
-					<h3>Current Weather on Mars</h3>
-					<p> {{ mars_dict.mars_weather }} </p>
-				</div>
-				<div class="col-xs-auto col-md-auto">
-					<h3>Mars Facts</h3>
-					<style>
-						table,
-						th,
-						td {
-							border: 1px solid black;
-						}
-​
-						th,
-						td {
-							padding: 3px;
-						}
-					</style>
-					{{ mars_dict.html_table | safe}}
-				</div>
-			</div>
-		</div>
-​
-		<br>
-		<br>
-​
 
-		<br>
-​
-​
-		<h3 class="text-center">Mars Hemispheres</h3>
-		<br>
-		<div class="row">
-			<div class="col-xs-6 col-md-6">
-				<img src="{{ mars_dict.hemisphere_image_urls[3]['img_url'] | default('static/images/error.png')}}" style="width:100%" class="img-responsive"
-					style="padding-right: 20px; padding left: 20px;"
-					alt=" {{mars_dict.hemisphere_image_urls[3]['title']}} " />
-				<h5>{{mars_dict.hemisphere_image_urls[3]['title']}}</h5>
-​
-			</div>
-			<div class="col-xs-6 col-md-6">
-				<img src="{{ mars_dict.hemisphere_image_urls[0]['img_url'] | default('static/images/error.png') }}" style="width:100%" class="img-responsive"
-					style="padding-right: 20px; padding left: 20px;"
-					alt=" {{mars_dict.hemisphere_image_urls[0]['title'] }} " />
-				<h5>{{mars_dict.hemisphere_image_urls[0]['title']}}</h5>
-			</div>
+		<div class="jumbotron text-center">
+			<h3>Current ETL File Progress</h3>
+			<p><span style="font-weight:bold">{{ mars_dict.news_title }}</span></p>
+			<p>{{ mars_dict.news_p }}</p>
 		</div>
 ​
-		<div class="row">
-			<div class="col-xs-6 col-md-6">
-				<img src="{{ mars_dict.hemisphere_image_urls[1]['img_url'] | default('static/images/error.png') }}" style="width:100%" class="img-responsive"
-					style="padding-right: 20px; padding left: 20px;"
-					alt=" {{mars_dict.hemisphere_image_urls[1]['title']}} " />
-				<h5>{{mars_dict.hemisphere_image_urls[1]['title']}}</h5>
 ​
-			</div>
-			<div class="col-xs-6 col-md-6">
-				<img src="{{ mars_dict.hemisphere_image_urls[2]['img_url'] | default('static/images/error.png') }}" style="width:100%" class="img-responsive"
-					style="padding-right: 20px; padding left: 20px;"
-					alt=" {{mars_dict.hemisphere_image_urls[2]['title']}} " />
-				<h5>{{mars_dict.hemisphere_image_urls[2]['title']}}</h5>
+		
+​
+		
+			
+				
+​
+		
 			</div>
 		</div> 
 ​
