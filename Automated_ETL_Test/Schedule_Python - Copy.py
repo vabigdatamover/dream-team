@@ -10,7 +10,7 @@ import pandas as pd
 
 def read_and_move(csv_file):
     df = pd.read_csv(csv_file)
-    shutil.move(csv_file, 'test_processed');
+    shutil.move(csv_file, 'test_processed')
     
     return df
 
